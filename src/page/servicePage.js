@@ -31,7 +31,7 @@ function Service({ }) {
                                 SERVIÇO
                             </div>
                             <div style={style.desc2}>
-                                {title ?? 'Instalação de Fogão em João Pessoa'}
+                                {title ?? 'Instalação de Fogão em Maceió'}
                             </div>
 
                         </div>
@@ -70,7 +70,7 @@ function Service({ }) {
                             </div>
 
                             <div style={style.title}>
-                                Somos especialistas em conserto de fogões em João Pessoa. Garantimos um serviço rápido, seguro e eficiente para deixar seu fogão como novo!
+                                Somos especialistas em conserto de fogões em Maceió. Garantimos um serviço rápido, seguro e eficiente para deixar seu fogão como novo!
 
                                 Agende agora mesmo e conte com a expertise da Dr. Fogão.
                             </div>
@@ -94,7 +94,7 @@ function Service({ }) {
                             <div style={{ marginLeft: 20, textAlign: "left" }}>
                                 Telefone
                                 <div>
-                                    99999-9999
+                                    (82)99690-0227
                                 </div>
                             </div>
                         </div>
@@ -111,25 +111,28 @@ function Service({ }) {
                         <div style={style.styleRight}>
                             Contato Dr. Fogão
                         </div>
+                        <a href="https://wa.me/82996900227"> 
                         <div style={style.button}>
                             <FaWhatsapp size={40} />
                             <div style={{ marginLeft: 20, textAlign: "left" }}>
                                 whatsapp
                                 <div>
-                                    99999-9999
+                                (82)99690-0227
                                 </div>
                             </div>
                         </div>
-
+                        </a>
+                        <a href="tel:+5582996900227"> 
                         <div style={{ ...style.button, marginTop: 20, color: "#F56A06" }}>
                             <FaPhone size={40} />
                             <div style={{ marginLeft: 20, textAlign: "left" }}>
                                 Telefone
                                 <div>
-                                    99999-9999
+                                (82)99690-0227
                                 </div>
                             </div>
                         </div>
+                        </a>
                     </div>
                 )}
 

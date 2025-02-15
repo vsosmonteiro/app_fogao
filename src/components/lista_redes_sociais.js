@@ -3,7 +3,7 @@ import { FaWhatsapp, FaInstagram } from 'react-icons/fa'; // Importando os ícon
 
 const RedesSociais = () => {
   const redes = [
-    { nome: 'WhatsApp', icone: <FaWhatsapp size={80} marginTop={20} marginBottom={20} />, cor: '#25D366', link: 'https://wa.me/82999995956' },
+    { nome: 'WhatsApp', icone: <FaWhatsapp size={80} marginTop={20} marginBottom={20} />, cor: '#25D366', link: 'https://wa.me/82996900227' },
   
   ];
 
