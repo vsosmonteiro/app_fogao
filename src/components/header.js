@@ -4,11 +4,7 @@ import './navbar.css';
 import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
   const navigate = useNavigate();
 
   return (
@@ -20,10 +16,10 @@ const Navbar = () => {
         </div>
 
       </div>
-      <button className="navbar-toggle" onClick={toggleMenu}>
+      <button className="navbar-toggle">
       
       </button>
-      <ul className={`navbar-menu ${isOpen ? 'open' : ''}`}>
+      <ul className={`navbar-menu`}>
         <li>
           <a href="/" onClick={(e)=>navigate('/')} >Home</a>
         </li>

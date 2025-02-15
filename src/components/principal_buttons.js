@@ -2,26 +2,53 @@ import React from 'react';
 import { FaWhatsapp,FaPhone} from 'react-icons/fa'; 
 import minhaImagem from '../assets/retangulo.jpg';
 
-const AlinhadoComFoto = ({texto1,texto2,corBotao1,corBotao2}) => {
+import { useState, useEffect } from "react";
+
+const AlinhadoComFoto = ({ texto1, texto2, corBotao1, corBotao2 }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize(); // Check on mount
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <div style={{...styles.container}}>
-   
-      <div style={{alignItems:"center",justifyItems:"center"}}>
-        <div style={{fontSize:32, fontWeight:700, width:"12em", textAlign:"center", marginBottom:"0.5em",color:"grey"}}>
-          DR. FOGÃO -  ESPECIALISTA EM CONSERTO DE FOGÃO EM MACEIÓ
+    <div style={{ ...styles.container }}>
+      <div style={{ alignItems: "center", justifyItems: "center" }}>
+        <div
+          style={{
+            fontSize: 32,
+            fontWeight: 700,
+            width: "12em",
+            textAlign: "center",
+            marginBottom: "0.5em",
+            color: "grey",
+          }}
+        >
+          DR. FOGÃO - ESPECIALISTA EM CONSERTO DE FOGÃO EM MACEIÓ
         </div>
-      
-      <div style={styles.buttonsContainer}>
-        <button style={{...styles.button,backgroundColor:corBotao1}}>  <FaWhatsapp/> {texto1}</button>
-        <button style={{...styles.button,backgroundColor:corBotao2}}> <FaPhone></FaPhone> {texto2}</button>
+
+        <div style={styles.buttonsContainer}>
+          <button style={{ ...styles.button, backgroundColor: corBotao1 }}>
+            <FaWhatsapp /> {texto1}
+          </button>
+          <button style={{ ...styles.button, backgroundColor: corBotao2 }}>
+            <FaPhone /> {texto2}
+          </button>
+        </div>
       </div>
-      
-      </div>
-      <img src={minhaImagem} style={{height:400}}></img>
-      
+
+      {/* Conditionally render the image */}
+      {!isMobile && <img src={minhaImagem} style={{ height: 400 }} />}
     </div>
   );
 };
+
 
 const styles = {
   container: {
@@ -58,5 +85,6 @@ const styles = {
     objectFit: 'cover',
   },
 };
+
 
 export default AlinhadoComFoto;
