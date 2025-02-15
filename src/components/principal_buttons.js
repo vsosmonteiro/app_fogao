@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaWhatsapp,FaPhone} from 'react-icons/fa'; 
+import { FaWhatsapp, FaPhone } from 'react-icons/fa';
 import minhaImagem from '../assets/retangulo.jpg';
 
 import { useState, useEffect } from "react";
@@ -34,12 +34,21 @@ const AlinhadoComFoto = ({ texto1, texto2, corBotao1, corBotao2 }) => {
         </div>
 
         <div style={styles.buttonsContainer}>
-          <button style={{ ...styles.button, backgroundColor: corBotao1 }}>
-            <FaWhatsapp /> {texto1}
-          </button>
+          <a href='https://wa.me/82996900227' target="_blank"
+            rel="noopener noreferrer">
+            <button style={{ ...styles.button, backgroundColor: corBotao1 }}>
+              <FaWhatsapp /> {texto1}
+            </button>
+          </a>
+          <a target="_blank"
+            rel="noopener noreferrer"
+            href="tel:+5582996900227"> 
+
           <button style={{ ...styles.button, backgroundColor: corBotao2 }}>
             <FaPhone /> {texto2}
           </button>
+          </a>
+
         </div>
       </div>
 
@@ -56,21 +65,21 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'space-between',
     width: '100%',
-    height:'30em',
-    background:'white',
+    height: '30em',
+    background: 'white',
     padding: '10px',
     boxSizing: 'border-box',
   },
   buttonsContainer: {
     display: 'flex',
-    marginLeft:"10px",
+    marginLeft: "10px",
     gap: '10px', // Adiciona espaço entre os botões
   },
   button: {
     padding: '15px 30px', // Botões mais largos
     fontSize: '16px',
     cursor: 'pointer',
-    color:'white',
+    color: 'white',
     borderRadius: '40px', // Borda arredondada
     border: '0px solid #ccc', // Borda leve
     backgroundColor: '#f0f0f0', // Cor de fundo leve

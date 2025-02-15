@@ -15,8 +15,8 @@ const Home = () => {
             <AlinhadoComFoto texto1={'Agende pelo whatsapp'} texto2={'Agende por ligacao'} corBotao1={'#34AF22'} corBotao2={"#F56A06"} />
         </div>
         <TextBlock
-            descricaoCima="Nossos Serviços em assistência técnica"
-            titulo="Serviços Especializados para Fogões e Fornos em Maceió"
+            descricaoCima="Nossos serviços em assistência técnica"
+            titulo="Serviços especializados para Fogões e Fornos em Maceió"
             descricaoBaixo="Conserto, instalação e conversão com garantia e qualidade. Atendemos no local para resolver qualquer problema do seu fogão."
         />
         <div style={{ display: "flex",flexWrap:'wrap', alignItems:'center', margin:'auto', gap: "30px", maxWidth: '1300px',width:'100%' }}>

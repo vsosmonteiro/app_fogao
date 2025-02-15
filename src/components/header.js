@@ -31,7 +31,7 @@ const Navbar = () => {
             <a href="/" onClick={(e) => { e.preventDefault(); navigate('/'); }}>Home</a>
           </li>
           <li>
-            <a href="/service" onClick={(e) => { e.preventDefault(); navigate('/service'); }}>Services</a>
+            <a href="/service" onClick={(e) => { e.preventDefault(); navigate('/service'); }}>Serviços</a>
           </li>
         </ul>
       )}
