@@ -12,13 +12,13 @@ import fogaozinho5 from '../assets/fogaozinho5.png';
 const Home = () => {
     return (<div>
         <div style={{ marginRight: "0", marginLeft: "0" }}>
-            <AlinhadoComFoto texto1={'Agende pelo whatsapp'} texto2={'Agende por ligacao'} corBotao1={'#34AF22'} corBotao2={"#F56A06"} />
+            {/* <AlinhadoComFoto texto1={'Agende pelo whatsapp'} texto2={'Agende por ligacao'} corBotao1={'#34AF22'} corBotao2={"#F56A06"} /> */}
         </div>
-        <TextBlock
+        {/* <TextBlock
             descricaoCima="Nossos Serviços em assistência técnica"
             titulo="Serviços Especializados para Fogões e Fornos em Maceió"
             descricaoBaixo="Conserto, instalação e conversão com garantia e qualidade. Atendemos no local para resolver qualquer problema do seu fogão."
-        />
+        /> */}
         <div style={{ display: "flex",flexWrap:'wrap', alignItems:'center', margin:'auto', gap: "30px", maxWidth: '1300px',width:'100%' }}>
             <QuadradoComConteudo title="Conserto de Fogão" descricao="Conserto de Fogão em Maceió: soluções rápidas e seguras com técnicos especializados. Agende já seu reparo!" imagem={fogaozinho} title2={'Conserto de Fogão'} desc2={'Oferecemos um serviço completo de conserto de fogão residencial na cidade de João Pessoa, garantindo soluções rápidas e eficientes para qualquer problema relacionado ao seu fogão, cooktop ou forno. Trabalhamos com técnicos especializados que utilizam ferramentas adequadas e peças originais para assegurar a máxima qualidade e segurança no reparo.'} />
             <QuadradoComConteudo title="Instalação de Fogão" descricao="instalação de Fogão e rede de gás com segurança e eficiência. Atendimento especializado para residências e comércios!" imagem={fogaozinho2} title2={'Instalação de Fogão'}desc2={'Oferecemos um serviço completo e especializado para instalação de fogão e projetos de rede de gás, atendendo às necessidades de prédios, condomínios, estabelecimentos comerciais, industriais e residências. Nossa equipe é composta por profissionais altamente capacitados, garantindo segurança, eficiência e conformidade com todas as normas técnicas.'}/>
