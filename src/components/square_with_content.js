@@ -1,17 +1,17 @@
 import React from 'react';
-import fogaozinho from '../assets/fogaozinho.png';
-const QuadradoComConteudo = ({title,descricao}) => {
+import { Link } from 'react-router-dom';
+const QuadradoComConteudo = ({title,descricao,imagem,desc2,title2}) => {
   return (
     <div style={styles.container}>
       <img 
-        src={fogaozinho} 
+        src={imagem} 
         alt="Exemplo" 
         style={styles.image} 
       />
       <p style={{...styles.text, fontSize:"30px",fontWeight:"bold"}}>{title}</p>
       <p style={styles.text}>{descricao}</p>
       <div style={{height:"30px"}}></div>
-      <button style={styles.button}>Conheça mais esse Serviço</button>
+      <button style={styles.button}> <Link to={'/service'} state={{desc:desc2,title:title2}}> Conheça mais esse Serviço </Link> </button>
     </div>
   );
 };
@@ -23,6 +23,7 @@ const styles = {
     backgroundColor: 'white', // Fundo cinza
     borderRadius: '10px',
     display: 'flex',
+    minWidth:'200px',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'start',

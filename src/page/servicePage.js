@@ -1,8 +1,9 @@
 import { FaPhone, FaWhatsapp } from "react-icons/fa";
-import Navbar from "../components/header";
-import RedesSociais from "../components/lista_redes_sociais";
+import { useLocation } from "react-router-dom";
 
-function Service() {
+function Service({}) {
+    const location = useLocation();
+    const { title, desc } = location.state || {}; 
     return (
         <div style={{ minHeight: "100vh", color: "#545152", marginTop: 20 }}>
             <div style={{ display: "flex", justifyContent:"space-between" }}>
@@ -13,13 +14,13 @@ function Service() {
                         SERVIÇO
                     </div>
                     <div style={style.desc2}>
-                        Instalação de Fogão em João Pessoa
+                        {title??'Instalação de Fogão em João Pessoa'}
                     </div>
 
                 </div>
             </titlefog>
             <div style={{...style.desc3 , width:"80%"}}>
-                    Oferecemos um serviço completo e especializado para instalação de fogão e projetos de rede de gás, atendendo às necessidades de prédios, condomínios, estabelecimentos comerciais, industriais e residências. Nossa equipe é composta por profissionais altamente capacitados, garantindo segurança, eficiência e conformidade com todas as normas técnicas.
+                    {'Oferecemos um serviço completo e especializado para instalação de fogão e projetos de rede de gás, atendendo às necessidades de prédios, condomínios, estabelecimentos comerciais, industriais e residências. Nossa equipe é composta por profissionais altamente capacitados, garantindo segurança, eficiência e conformidade com todas as normas técnicas.'}
                     <div>
                         <div style={style.title}>
                         Quais os serviços que a Dr. Fogão oferece?
