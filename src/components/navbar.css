@@ -55,10 +55,3 @@ body, ul, li, a, button {
     background-color: #575757;
   }
   
-  @media (max-width: 768px) {
-    .navbar-menu {
-      display: none;
-    }
-  }
-  
-  
