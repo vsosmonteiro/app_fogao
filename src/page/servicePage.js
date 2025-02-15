@@ -74,38 +74,64 @@ function Service({ }) {
 
                                 Agende agora mesmo e conte com a expertise da Dr. Fogão.
                             </div>
+                            {isMobile && (
+                    <div style={{ marginTop: 0, marginRight: 30 }}>
+                        <div style={style.styleRight}>
+                            Contato Dr. Fogão
+                        </div>
+                        <div style={style.button}>
+                            <FaWhatsapp size={40} />
+                            <div style={{ marginLeft: 20, textAlign: "left" }}>
+                                whatsapp
+                                <div>
+                                    99999-9999
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style={{ ...style.button, marginTop: 20, color: "#F56A06" }}>
+                            <FaPhone size={40} />
+                            <div style={{ marginLeft: 20, textAlign: "left" }}>
+                                Telefone
+                                <div>
+                                    99999-9999
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )}
 
                         </div>
                     </div>
 
                 </div>
-                
-                {!isMobile && (
-  <div style={{ marginTop: 0, marginRight: 30 }}>
-    <div style={style.styleRight}>
-      Contato Dr. Fogão
-    </div>
-    <div style={style.button}>
-      <FaWhatsapp size={40} />
-      <div style={{ marginLeft: 20, textAlign: "left" }}>
-        whatsapp
-        <div>
-          99999-9999
-        </div>
-      </div>
-    </div>
 
-    <div style={{ ...style.button, marginTop: 20, color: "#F56A06" }}>
-      <FaPhone size={40} />
-      <div style={{ marginLeft: 20, textAlign: "left" }}>
-        Telefone
-        <div>
-          99999-9999
-        </div>
-      </div>
-    </div>
-  </div>
-)}
+                {!isMobile && (
+                    <div style={{ marginTop: 0, marginRight: 30 }}>
+                        <div style={style.styleRight}>
+                            Contato Dr. Fogão
+                        </div>
+                        <div style={style.button}>
+                            <FaWhatsapp size={40} />
+                            <div style={{ marginLeft: 20, textAlign: "left" }}>
+                                whatsapp
+                                <div>
+                                    99999-9999
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style={{ ...style.button, marginTop: 20, color: "#F56A06" }}>
+                            <FaPhone size={40} />
+                            <div style={{ marginLeft: 20, textAlign: "left" }}>
+                                Telefone
+                                <div>
+                                    99999-9999
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )}
 
 
             </div>
