@@ -23,11 +23,13 @@ const styles = {
     backgroundColor: 'white', // Fundo cinza
     borderRadius: '10px',
     display: 'flex',
-    minWidth:'200px',
+    minWidth:'100px',
+    minHeight:'270px',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'start',
     padding: '10px',
+    marginLeft:'10px',
     boxSizing: 'border-box',
      // Evita que elementos escapem pelos lados
   },
