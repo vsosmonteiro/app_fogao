@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div style={{ display: 'flex' }}>
-        <img src={minhaImagem} className='navbar-img' alt="Logo" />
+        <img src={minhaImagem} className='navbar-img' alt="Logo" width={'100%'} />
         <div className="navbar-logo"></div>
       </div>
       

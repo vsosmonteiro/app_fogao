@@ -22,7 +22,7 @@ const AlinhadoComFoto = ({ texto1, texto2, corBotao1, corBotao2 }) => {
       <div style={{ alignItems: "center", justifyItems: "center" }}>
         <div
           style={{
-            fontSize: 32,
+            fontSize: 28,
             fontWeight: 700,
             width: "12em",
             textAlign: "center",

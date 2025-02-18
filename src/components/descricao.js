@@ -30,7 +30,7 @@ const styles = {
     margin: '0px 0',
   },
   titulo: {
-    fontSize: '32px',
+    fontSize: '28px',
     fontWeight: '800',
     color: 'grey',
     margin: '10px 0',
