@@ -4,14 +4,17 @@
 }
 
 /* Prevent horizontal scrolling */
-html, body {
+html {
   margin: 0;
   padding: 0;
+  height: auto;
   overflow-x: hidden;
-
+  overflow-y: auto;
+  width: 100%;
 }
 
 /* Ensure all divs don't exceed the screen width */
 * {
   box-sizing: border-box;
+  max-width: 100vw;
 }
