@@ -33,7 +33,7 @@ const AlinhadoComFoto = ({ texto1, texto2, corBotao1, corBotao2 }) => {
           DR. FOGÃO - ESPECIALISTA EM CONSERTO DE FOGÃO EM MACEIÓ
         </div>
 
-        <div style={styles.buttonsContainer}>
+        <div style={{...styles.buttonsContainer, flexDirection: isMobile?'column':'row'}}>
           <a href='https://wa.me/82996900227' target="_blank"
             rel="noopener noreferrer">
             <button style={{ ...styles.button, backgroundColor: corBotao1 }}>
@@ -67,8 +67,6 @@ const styles = {
     height: '30em',
     background: 'white',
     padding: '10px',
-    marginLeft:'5px',
-    marginRight:'5px',
     boxSizing: 'border-box',
   },
   buttonsContainer: {

@@ -12,6 +12,9 @@ html {
   overflow-y: auto;
   width: 100%;
 }
+body{
+  width: 100%;
+}
 
 /* Ensure all divs don't exceed the screen width */
 * {
