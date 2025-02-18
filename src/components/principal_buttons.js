@@ -64,10 +64,11 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-    width: '100%',
     height: '30em',
     background: 'white',
     padding: '10px',
+    marginLeft:'5px',
+    marginRight:'5px',
     boxSizing: 'border-box',
   },
   buttonsContainer: {
