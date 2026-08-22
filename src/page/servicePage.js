@@ -79,25 +79,29 @@ function Service({ }) {
                         <div style={style.styleRight}>
                             Contato Dr. Fogão
                         </div>
+                        <a href="https://wa.me/82996900227">
                         <div style={style.button}>
                             <FaWhatsapp size={40} />
                             <div style={{ marginLeft: 20, textAlign: "left" }}>
                                 whatsapp
                                 <div>
-                                    99999-9999
+                                    996900227
                                 </div>
                             </div>
                         </div>
+                        </a>
 
+                        <a href="tel:+5582996900227">
                         <div style={{ ...style.button, marginTop: 20, color: "#F56A06" }}>
                             <FaPhone size={40} />
                             <div style={{ marginLeft: 20, textAlign: "left" }}>
                                 Telefone
                                 <div>
-                                    (82)99690-0227
+                                    996900227
                                 </div>
                             </div>
                         </div>
+                        </a>
                     </div>
                 )}
 
@@ -117,7 +121,7 @@ function Service({ }) {
                             <div style={{ marginLeft: 20, textAlign: "left" }}>
                                 whatsapp
                                 <div>
-                                (82)99690-0227
+                                996900227
                                 </div>
                             </div>
                         </div>
@@ -128,7 +132,7 @@ function Service({ }) {
                             <div style={{ marginLeft: 20, textAlign: "left" }}>
                                 Telefone
                                 <div>
-                                (82)99690-0227
+                                996900227
                                 </div>
                             </div>
                         </div>
